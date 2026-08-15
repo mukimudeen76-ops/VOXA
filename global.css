@@ -1,9 +1,3 @@
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css";
-
-@import "nativewind/theme";
-
 @theme {
   --font-antonio-bold: "Antonio-Bold";
   --font-antonio-medium: "Antonio-Medium";
@@ -17,12 +11,12 @@
   --font-outfit-semibold: "Outfit-SemiBold";
   --font-outfit-thin: "Outfit-Thin";
 
-  --color-primary: #8b5cf6;
-  --color-background: #000000;
-  --color-card: #0a0714;
+  --color-primary: #a855f7;
+  --color-background: #06070a;
+  --color-card: #0f0f18;
   --color-card-2: #08080c;
-  --color-muted: #2a2a4a;
-  --color-main: #00e5ff;
+  --color-muted: #24303a;
+  --color-main: #22d3ee;
 
   --animate-ripple-1: sonarRipple 2s ease-out infinite;
   --animate-ripple-2: sonarRipple 2s ease-out infinite 0.8s;
@@ -31,11 +25,11 @@
 
 @keyframes sonarRipple {
   0% {
-    border-color: rgba(0, 229, 255, 0.6);
-    background-color: rgba(0, 229, 255, 0.08);
+    border-color: rgba(34, 211, 238, 0.6);
+    background-color: rgba(34, 211, 238, 0.08);
   }
   100% {
-    border-color: rgba(0, 229, 255, 0.05);
+    border-color: rgba(34, 211, 238, 0.05);
     background-color: transparent;
   }
 }

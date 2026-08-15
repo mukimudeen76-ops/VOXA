@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255,255,255,0.03)",
     borderRadius: 8,
     borderLeftWidth: 3,
-    borderLeftColor: "#00F0FF",
+    borderLeftColor: "#22D3EE",
   },
   gridLabel: {
     color: "#A0AEC0",

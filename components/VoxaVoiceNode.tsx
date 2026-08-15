@@ -29,7 +29,7 @@ const VoiceNode = () => {
       pulseAnim.stopAnimation();
       pulseAnim.setValue(0);
     }
-  }, [listening]);
+  }, [listening, pulseAnim]);
 
   const borderColor = pulseAnim.interpolate({
     inputRange: [0, 1],
@@ -60,7 +60,7 @@ const VoiceNode = () => {
                 borderColor: listening ? borderColor : "rgba(0, 229, 255, 0.4)",
               }}
             >
-              <Mic color="#00E5FF" size={50} strokeWidth={1.5} />
+              <Mic color="#22D3EE" size={50} strokeWidth={1.5} />
             </AnimatedPressable>
           </View>
         </View>

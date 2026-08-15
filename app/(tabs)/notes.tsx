@@ -24,9 +24,9 @@ export default function NotesScreen() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: "#000", padding: 20 },
-  title: { color: "#00E5FF", fontSize: 16, fontWeight: "bold", fontFamily: "monospace", letterSpacing: 1, marginBottom: 6 },
+  title: { color: "#22D3EE", fontSize: 16, fontWeight: "bold", fontFamily: "monospace", letterSpacing: 1, marginBottom: 6 },
   subtitle: { color: "#8a8ab0", fontSize: 12, fontFamily: "monospace", marginBottom: 18 },
-  card: { padding: 16, marginVertical: 6, borderRadius: 12, backgroundColor: "#0A0714", borderLeftWidth: 3, borderLeftColor: "#00E5FF" },
-  cardTitle: { color: "#00E5FF", fontSize: 13, fontWeight: "bold", fontFamily: "monospace", marginBottom: 4 },
+  card: { padding: 16, marginVertical: 6, borderRadius: 12, backgroundColor: "#0A0714", borderLeftWidth: 3, borderLeftColor: "#22D3EE" },
+  cardTitle: { color: "#22D3EE", fontSize: 13, fontWeight: "bold", fontFamily: "monospace", marginBottom: 4 },
   cardBody: { color: "#d0d0e8", fontSize: 13, fontFamily: "monospace" },
 });

@@ -33,7 +33,7 @@ export default function AppsScreen() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: "#000", padding: 20 },
-  title: { color: "#00E5FF", fontSize: 16, fontWeight: "bold", fontFamily: "monospace", letterSpacing: 1, marginBottom: 6 },
+  title: { color: "#22D3EE", fontSize: 16, fontWeight: "bold", fontFamily: "monospace", letterSpacing: 1, marginBottom: 6 },
   subtitle: { color: "#8a8ab0", fontSize: 12, fontFamily: "monospace", marginBottom: 18 },
   row: {
     padding: 16,
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     backgroundColor: "#0A0714",
     borderLeftWidth: 3,
-    borderLeftColor: "#8B5CF6",
+    borderLeftColor: "#A855F7",
   },
   rowText: { color: "#fff", fontSize: 15, fontFamily: "monospace" },
 });

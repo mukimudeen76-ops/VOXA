@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function VoxaBiometricScanner() {
@@ -28,7 +28,7 @@ export default function VoxaBiometricScanner() {
           <Text
             style={[
               styles.badgeText,
-              { color: authenticated ? "#00F0FF" : "#FF007A" },
+              { color: authenticated ? "#22D3EE" : "#FF007A" },
             ]}
           >
             {isScanning ? "SCANNING..." : authenticated ? "VERIFIED" : "LOCKED"}
@@ -52,7 +52,7 @@ export default function VoxaBiometricScanner() {
               styles.waveBar,
               {
                 height: isScanning ? Math.random() * 28 + 6 : val * 24 + 4,
-                backgroundColor: idx % 2 === 0 ? "#00F0FF" : "#FF007A",
+                backgroundColor: idx % 2 === 0 ? "#22D3EE" : "#FF007A",
               },
             ]}
           />
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   title: {
-    color: "#00F0FF",
+    color: "#22D3EE",
     fontSize: 13,
     fontWeight: "bold",
     fontFamily: "monospace",
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     marginTop: 6,
     paddingVertical: 10,
     borderRadius: 8,
-    backgroundColor: "#7000FF",
+    backgroundColor: "#A855F7",
     alignItems: "center",
   },
   buttonActive: {

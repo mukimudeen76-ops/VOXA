@@ -1,4 +1,5 @@
 import VoxaBiometricScanner from "@/components/VoxaBiometricScanner";
+import VoxaCommandConsole from "@/components/VoxaCommandConsole";
 import VoxaHeader from "@/components/VoxaHeader";
 import VoxaHolographicOrb from "@/components/VoxaHolographicOrb";
 import VoxaNativeVisualizer from "@/components/VoxaNativeVisualizer";
@@ -15,6 +16,7 @@ export default function Index() {
     <SafeAreaView className="flex-1 bg-black p-5">
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 32 }}>
         <VoxaHeader />
+        <VoxaCommandConsole />
         <VoxaHolographicOrb />
         <VoxaVoiceNode />
         <VoxaBiometricScanner />

@@ -48,6 +48,24 @@ playback, opening apps, toggling hardware and system settings, and managing your
 Traditional apps force you to unlock your screen, find an icon, tap buttons, and type text.
 VOXA changes that completely:
 
+### 🐍 VOXA Ki Baat Karne Ki Style (Persona)
+
+VOXA ek **sassy, witty, Hinglish** sovereign AI hai — jaise VENOM. Ye:
+- Aapko (Boss) turant pehchan leta hai, kabhi "Kaun ho tum?" nahi poochta
+- **Desi roasts**, playful banter, aur razor-sharp Hinglish me baat karta hai
+- Spicy slangs sirf aapke (Boss) saath use karta hai
+- `systemInstruction` se isko set karo → `constants/persona.ts` → `getVoxaSystemInstruction()`
+
+Default voice **`Puck`** (male), Settings me **Fenrir / Aoede / Kore** bhi choose kar sakte ho.
+Details: [PERSONA_GUIDE.md](PERSONA_GUIDE.md)
+
+### 🎙️ Command Console (Phone Control — VENOM style)
+Home screen par ek **Command Console** hai — aap type/likho aur VOXA VENOM-style jawab deta hai.
+Supported commands: `call <number>`, `sms <number> <text>`, `whatsapp <number> <text>`,
+`open whatsapp/youtube/camera`, `wifi`, `bluetooth`, `camera`, `flashlight`, `notifications`,
+`media`, `reminder`, `memory` etc.
+> Source: `services/voxaCommands.ts` + `components/VoxaCommandConsole.tsx`
+
 ```
 Your Spoken Voice
     ↓ (Bidirectional Real-Time PCM Stream)
