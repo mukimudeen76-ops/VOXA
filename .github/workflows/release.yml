@@ -1,0 +1,99 @@
+name: Release APK
+
+# Trigger: jab bhi ek version tag push ho, jaise v1.0.0
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & Release Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Setup Java (JDK 17 — required by Expo SDK 54 / RN 0.81)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install dependencies (pnpm)
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - run: pnpm install --frozen-lockfile
+
+      # Optional signing: agar secrets set hain to release-signed APK banega,
+      # warna debug signing se build hoga (default behavior of this project).
+      - name: Restore release keystore (if secrets provided)
+        if: env.KEYSTORE_BASE64 != ''
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          echo "$KEYSTORE_BASE64" | base64 --decode > android/app/release.keystore
+          if [ -f android/app/release.keystore ]; then
+            if [ -f android/gradle.properties ]; then
+              echo "RELEASE_STORE_FILE=release.keystore" >> android/gradle.properties
+              echo "RELEASE_STORE_PASSWORD=$KEYSTORE_PASSWORD" >> android/gradle.properties
+              echo "RELEASE_KEY_ALIAS=$KEY_ALIAS" >> android/gradle.properties
+              echo "RELEASE_KEY_PASSWORD=$KEY_PASSWORD" >> android/gradle.properties
+            fi
+          fi
+        shell: bash
+
+      - name: Expo prebuild (generate android project)
+        run: npx expo prebuild --platform android --no-install
+
+      - name: Build release APK
+        working-directory: android
+        run: ./gradlew assembleRelease
+
+      - name: Locate APK
+        id: apk
+        run: |
+          APK=$(find android/app/build/outputs/apk/release -name "*.apk" | head -n 1)
+          echo "APK_PATH=$APK" >> "$GITHUB_OUTPUT"
+          echo "Found APK: $APK"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "VOXA v${{ github.ref_name }}"
+          body: |
+            ## VOXA Android Release — ${{ github.ref_name }}
+
+            **Install:** Download the APK below and allow "Install from unknown sources".
+
+            ### What's inside
+            - Voice-first mobile AI execution assistant
+            - Incoming call management & caller-name announcer
+            - Real-time notification listener & auto-responder
+            - System-wide media controller
+            - App launcher, hardware & settings control
+            - Calendar & on-device memory tools
+          draft: false
+          prerelease: false
+          files: |
+            ${{ steps.apk.outputs.APK_PATH }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

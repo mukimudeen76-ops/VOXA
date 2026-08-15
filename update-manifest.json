@@ -1,0 +1,5 @@
+{
+  "latestVersion": "1.0.0",
+  "apkDownloadUrl": "https://github.com/VOXA/VOXA/releases/download/v1.0.0/VOXA.v1.0.0.apk",
+  "releaseNotes": "VOXA v1.0.0 — Voice-first mobile AI execution system. Incoming call management with caller-name announcer, real-time notification listener & auto-responder (WhatsApp/Instagram/SMS), system-wide media controller, hardware & settings teleport, calendar & memory tools, and Gemini Live bidirectional voice streaming."
+}

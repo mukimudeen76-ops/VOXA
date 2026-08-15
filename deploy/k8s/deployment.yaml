@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voxa-voice-gateway
+  namespace: voxa-ai-production
+  labels:
+    app.kubernetes.io/name: voxa-voice-gateway
+    app.kubernetes.io/part-of: voxa-platform
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: voxa-voice-gateway
+  template:
+    metadata:
+      labels:
+        app: voxa-voice-gateway
+    spec:
+      containers:
+        - name: voice-gateway
+          image: registry.voxa.app/voxa/voice-gateway:v2.4.0
+          ports:
+            - containerPort: 8088
+              name: websocket
+            - containerPort: 50051
+              name: grpc
+          resources:
+            limits:
+              cpu: "2000m"
+              memory: "4Gi"
+              nvidia.com/gpu: "1"
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8088
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8088
+            initialDelaySeconds: 15
+            periodSeconds: 20
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: voxa-voice-gateway-hpa
+  namespace: voxa-ai-production
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: voxa-voice-gateway
+  minReplicas: 3
+  maxReplicas: 20
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 75
