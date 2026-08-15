@@ -19,13 +19,13 @@ VOXA operates under an **Open Core Commercial Model**:
   - Production agentic orchestration & tool loops
   - Security, license validation, and anti-tamper modules
 
-> 💡 **For source code access, commercial licensing, or custom enterprise development**, please contact the developer directly at **`voxaaidevop@gmail.com`**.
+> 💡 **For source code access, commercial licensing, or custom enterprise development**, please contact the developer directly at **`xtehzeeb.x7@gmail.com`**.
 
 ---
 
 ## 🚀 How to Contribute
 
-1. **Fork the Repository**: Fork [VOXA/VOXA](https://github.com/VOXA/VOXA) on GitHub.
+1. **Fork the Repository**: Fork the [VOXA repository](https://github.com/mukimudeen76-ops/VOXA) on GitHub.
 2. **Create a Feature Branch**:
    ```bash
    git checkout -b feat/my-cool-widget
@@ -41,6 +41,4 @@ VOXA operates under an **Open Core Commercial Model**:
 
 ## 💬 Questions & Support
 
-- **Website & License**: [https://www.voxa.app/pricing](https://www.voxa.app/pricing)
-- **Official Download**: [https://www.voxa.app/download/mobile](https://www.voxa.app/download/mobile)
-- **Developer Email**: `voxaaidevop@gmail.com`
+- **Developer Email**: `xtehzeeb.x7@gmail.com`

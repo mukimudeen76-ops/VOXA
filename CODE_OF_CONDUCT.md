@@ -28,7 +28,7 @@ Examples of unacceptable behavior:
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the lead developer at **`voxaaidevop@gmail.com`**. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the lead developer at **`xtehzeeb.x7@gmail.com`**. All complaints will be reviewed and investigated promptly and fairly.
 
 ---
 

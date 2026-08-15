@@ -25,7 +25,7 @@ media, apps, hardware, and calendar — in real time.**
 - [📁 Project Structure](#-project-structure)
 - [🚀 Setup & Run](#-setup--run)
 - [🔒 Security & Privacy](#-security--privacy)
-- [🪡 Open-Core Model & Licensing](#-open-core-model--licensing)
+- [🪡 Licensing](#-licensing)
 - [🤝 Contributing](#-contributing)
 - [📜 License](#-license)
 
@@ -191,16 +191,10 @@ npm run android        # expo run:android (custom dev client)
 
 ---
 
-# 🪡 Open-Core Model & Licensing
+# 🪡 Licensing
 
-VOXA follows an **Open-Core commercial model**:
-
-- **Public Repository:** UI shell, navigation, theme system, and community integration
-  examples.
-- **Private Production Core:** Native voice execution engine, Kotlin modules, and low-latency
-  PCM pipelines.
-
-> 🔒 Full AI execution requires an active **Mobile PRO License**.
+VOXA is released under the **MIT License** — open, free, and community-friendly.
+See [LICENSE](LICENSE) for full details.
 
 ---
 
@@ -216,9 +210,7 @@ We welcome UI improvements, bug fixes, and community contributions to the fronte
 
 # 📜 License
 
-The UI Shell is licensed under the **MIT License**. The core VOXA native voice engine and
-agent execution logic are proprietary software subject to the **VOXA Commercial License**.
-See [LICENSE](LICENSE) for full details.
+VOXA is licensed under the **MIT License**. See [LICENSE](LICENSE) for full details.
 
 ---
 

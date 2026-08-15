@@ -1,27 +1,21 @@
-VOXA Commercial & Open-Core Dual License
+MIT License
 
-Copyright (c) 2026 VOXA. All rights reserved.
+Copyright (c) 2026 VOXA
 
-1. PUBLIC FRONTEND UI SHELL (MIT LICENSE)
-Permission is hereby granted, free of charge, to any person obtaining a copy of the
-open-source frontend UI shell components contained in this public repository, to deal in
-the Software without restriction, including without limitation the rights to use, copy,
-modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject
-to the condition that the above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-2. VOXA PROPRIETARY ENGINE & COMMERCIAL SOFTWARE
-VOXA is a paid software application. Full application functionality, real-time voice
-streaming execution engines, native mobile execution loops, and automated tool
-integrations require an active Mobile PRO License.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-- Official Pricing & License Purchase: https://voxa.app/pricing
-- Official APK Downloads: https://voxa.app/download
-- Source Code & Enterprise Access: Contact hello@voxa.app
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
-FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

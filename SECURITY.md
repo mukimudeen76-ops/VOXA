@@ -16,7 +16,7 @@ At VOXA, security and privacy are fundamental principles of our design architect
 If you discover a security vulnerability within VOXA or the public UI shell, please report it responsibly:
 
 1. **Do NOT open a public issue** on GitHub.
-2. Email the vulnerability details directly to **`voxaaidevop@gmail.com`**.
+2. Email the vulnerability details directly to **`xtehzeeb.x7@gmail.com`**.
 3. Include clear steps to reproduce the issue, proof of concept, and affected versions.
 
 We appreciate your effort in responsibly disclosing findings to keep our users safe.
@@ -25,4 +25,4 @@ We appreciate your effort in responsibly disclosing findings to keep our users s
 
 ## 📜 Commercial & Security Inquiries
 
-For enterprise licensing, security audits, or private source code requests, please reach out to **`voxaaidevop@gmail.com`** or visit [https://www.voxa.app](https://www.voxa.app).
+For enterprise licensing, security audits, or private source code requests, please reach out to **`xtehzeeb.x7@gmail.com`** or visit the repository.

@@ -101,15 +101,12 @@ npm run android      # expo run:android (custom dev client)
 
 ## 7. Licensing
 
-- **UI Shell:** MIT License
-- **Core Engine & Agent Execution:** VOXA Commercial License (paid / Mobile PRO)
+- **License:** MIT License
 - Details: [LICENSE](LICENSE)
 
 ---
 
-## 8. Important Note
+## 8. Contact
 
-Ye project **VOXA (https://github.com/VOXA/VOXA)** ka rebrand hai. Iska public UI
-shell MIT license me hai (copy karna legal hai), lekin original core engine/proprietary
-parts ke commercial license ka dhyan rakhna. Production me lene se pehle apna naam,
-pricing, API key, aur legal/licensing setup zaroor karo.
+- **Owner / Maintainer:** xtehzeeb.x7@gmail.com
+- **Repository:** https://github.com/mukimudeen76-ops/VOXA
